@@ -1,0 +1,395 @@
+/* CUSTOM CSS RULES */
+
+body {
+  background: #eeeeee;
+}
+
+.clear-padding {
+  padding: 0;
+}
+
+.top-header {
+  width: 100%;
+  height: 40px;
+}
+
+.top-header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.top-header ul li {
+    float: left;
+}
+
+.top-header ul li a {
+  color: #666;
+  height: 40px;
+  display: block;
+  font-size: 12px;
+  padding: 10px 20px 0px 0px;
+
+}
+
+.top-header ul li a:hover {
+  color: #333;
+  text-decoration: none;
+}
+
+.top-header ul.dropdown-menu li {
+  width: 100%;
+}
+
+.top-header ul.dropdown-menu li{
+  padding: 10px 5px 0px 15px;
+  border-bottom: 1px dotted #ccc;
+}
+
+/* Header*/
+header {
+  width: 100%;
+  height: 80px;
+  background: #fff;
+  border-bottom: 1px solid #d1d1d1;
+}
+
+header div.logo {
+  height: 80px;
+  padding-top: 20px;
+}
+
+header form {
+  padding-top: 23px;
+}
+
+header .cart,
+header .signup {
+  width: 50%;
+  float: left;
+  padding-top: 17px;
+}
+
+header .cart i.fa,
+header .signup i.fa {   /*when there is space like header .cart the cart is a child of header, but when theres no space,its not a direct child of the parent*/
+  color: #2e53c5;
+  float: left;
+}
+
+header .cart span.content-right,
+header .signup span.content-right {
+  float: left;
+  margin-left: 10px;
+  padding-top: 5px;
+  font-weight: bold;
+}
+
+header .cart span.content-right span {
+  display: block;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  background: #f0c419;
+  color: #fff;
+  font-size: 11px;
+  font-weight: bold;
+  border-radius: 50%;    /*creates a curve at the edges*/
+  -o-border-radius: 50%;   /*for lower versions of opera mini*/
+  -ms-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+}
+
+header .signup span.content-right {
+  padding-top: 3px;
+}
+
+nav.navbar {
+  background: #fff;
+  height: 40px;
+}
+
+nav.navbar a {
+  color: #484747;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+nav.navbar .icon-bar {
+  background: #2e53c5;
+}
+
+/* Category Side bar*/
+.category li:hover{
+  background: #c4e2f2;
+}
+
+.category a {
+  color: #333;
+  font-weight: bold;
+}
+
+.category a:hover {
+  text-decoration: none;
+}
+
+.category a::after {
+  font-family: 'FontAwesome';
+  content: '\f054';
+  float: right;
+  font-size: 10px;
+  padding-top: 8px;
+
+}
+
+.category a i {
+  font-size: 25px;
+  width: 30px;
+  display: inline-block;
+  color: #2e53c5;
+}
+
+/*Recent product section*/
+.cat-slider {
+  margin-top: -20px;
+}
+
+#products {
+  margin: 0;
+}
+
+#products .product {
+  margin: 5px;
+}
+
+#products .product .content {
+  padding: 20px;
+}
+
+#products .product .content h4,
+#products .product .content h3 {
+  margin: 0;
+  padding: 0;
+}
+
+#products .product .content span {
+  color: #fb7b76;
+  text-decoration: line-through;
+}
+
+#products .product .product-pack {
+  margin-bottom: 10px;
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/*Ad section*/
+section.ad {
+  width: 1170px;
+  height: 160px;
+  background: url('../img/images/slice-3.jpg') no-repeat center center;
+  background-size: cover;
+  display: table;
+}
+
+section.ad h1{
+  color: #fff;
+  text-align: center;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+/*Services section*/
+section.services {
+  margin: 20px 0;
+}
+
+section.services .service {
+    background-color: #fff;
+    width: 20%;
+    text-align: center;
+    padding: 20px;
+    float: left;
+    border: 1px solid #d1d1d1;
+}
+
+section.services .service i {
+  font-size: 50px;
+  color: #1fa8e8;
+}
+
+section.services .service h4 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/*Subscription Section*/
+section .subscribe {
+  background: #fff;
+  padding: 30px;
+}
+
+section .subscribe h2 {
+  color: #1fa8e8;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+}
+
+/*Footer section*/
+footer {
+  margin: 20px 0;
+}
+
+footer h4 {
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+}
+
+footer hr {   /*hr is the horizontal rule*/
+  background: #f0c419;
+  height: 4px;
+  margin: 0 0 10px;
+  padding: 0;
+  width: 60px;
+}
+
+footer ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+footer ul li a {
+  color: #333;
+  display: block;
+  padding: 5px 0;     /*within/between the element is padding and outside the element is margin*/
+}
+
+footer ul li a:hover {
+  color: #111;
+  text-decoration: none;
+}
+
+footer ul + img {
+  margin  : 10px 0;
+}
+
+footer .row:nth-child(2) {
+  padding: 15px 0;
+  margin-top: 15px;
+  border-top: 1px solid #333;
+}
+
+footer .social a {
+  color: #333;
+  margin-left: 10px;
+}
+
+footer .social a i.fa-facebook-square {
+  color: #3b5998;
+}
+
+footer .social a i.fa-instagram {
+  color: #517fa4;
+}
+
+footer .social a i.fa-twitter-square {
+  color: #55acee;
+}
+
+footer .social a i.fa-youtube-square {
+  color: #b31217;
+}
+
+/*MEDIA QUERIES*/
+@media (max-width: 480px) {
+  header {
+    height: auto;
+    padding-bottom: 20px;
+  }
+  header form {
+    padding-top: 3px;
+  }
+  header .cart,
+  header .signup {
+  padding-left: 57px;
+  }
+
+  nav.navbar {
+    height: auto;
+  }
+
+  .cat-slider .carousel-caption h1 {
+    font-size: 25px;
+    font-weight: bold;
+  }
+
+  section.ad {
+    width: 100%;
+  }
+  section.ad h1 {
+  font-size: 35px;
+  }
+  section.services .service {
+    width: 50%;
+  }
+
+  section.services .service:last-child {
+    width: 100%
+  }
+
+  footer {
+    padding: 0 20px 20px;
+
+  }
+
+  footer h4 {
+    margin-top: 25px;
+  }
+
+  footer .copyright {
+    text-align: center;
+  }
+
+  footer .social.pull-right {
+    float: none !important;
+  }
+}
+
+/*tablets*/
+@media (max-width: 780px) {
+  header {
+    height: auto;
+    padding-bottom: 20px;
+  }
+}
+
+
+
+/*footer section self practice*/
+/*.information {
+
+}
+
+.information .info {
+  float: left;
+  padding-right: 20px;
+  padding-top: 10px;
+  width: 20%;
+  margin: 0;
+}
+
+.information .info h1  {
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.information .info p {
+}
+*/
